@@ -3,13 +3,10 @@ package patrick.extractor.scraper;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
-import com.fasterxml.jackson.dataformat.csv.CsvMapper;
-import com.fasterxml.jackson.dataformat.csv.CsvSchema;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.concurrent.BlockingQueue;
 import patrick.extractor.scraper.response.CompanyResponse;
-import patrick.extractor.scraper.response.CompanyResponse.CompanyItem;
 
 public class IfDesignFileWriterTask implements Runnable {
 

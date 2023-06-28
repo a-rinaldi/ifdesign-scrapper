@@ -69,7 +69,8 @@ public class Scraper {
 
         String requestBody = objectMapper
                 .writerWithDefaultPrettyPrinter()
-                .writeValueAsString(ApiRequest.of(1, 2)); //company and design studios
+                .writeValueAsString(ApiRequest.of(2));
+                //.writeValueAsString(ApiRequest.of(1, 2)); //company and design studios
 
         HttpRequest httpRequest = HttpRequest.newBuilder(new URI(String.format("%s/company/all/0", apiEndpoint)))
                 .header("Content-Type", "application/json")
